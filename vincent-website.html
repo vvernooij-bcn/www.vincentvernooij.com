@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Vernooij | Product Leader | Marketplace & Platform Strategy</title>
+    <meta name="description" content="Product Leader specializing in scaling marketplaces and platforms. 15+ years experience driving growth at eDreams, Adevinta, and Expedia.">
+    <meta name="keywords" content="Product Leader, Chief Product Officer, VP Product, Product Director, Marketplace Strategy, Platform Strategy, B2C, Scale-up, Product Management, Travel Tech, Monetization, Growth Product, Barcelona, Remote, AI Strategy">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #fff;
+            padding-top: 80px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e2e8f0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-links a:hover {
+            color: #3182ce;
+        }
+        
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #4a5568;
+            transition: 0.3s;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin-top: -80px;
+            padding-top: 120px;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+        
+        .hero-text .tagline {
+            font-size: 1.3rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        
+        .value-props {
+            list-style: none;
+            margin-bottom: 2.5rem;
+        }
+        
+        .value-props li {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .value-props li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #48bb78;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: #3182ce;
+            color: #fff;
+            border: 2px solid #3182ce;
+        }
+        
+        .btn-primary:hover {
+            background: #2c5282;
+            border-color: #2c5282;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #3182ce;
+            border: 2px solid #3182ce;
+        }
+        
+        .btn-secondary:hover {
+            background: #3182ce;
+            color: #fff;
+        }
+        
+        .hero-image {
+            text-align: center;
+        }
+        
+        .profile-photo {
+            width: 300px;
+            height: 300px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .photo-placeholder {
+            width: 300px;
+            height: 300px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #a0aec0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        /* Value Proposition Section */
+        .value-prop-section {
+            background: #f7fafc;
+            text-align: center;
+        }
+        
+        .value-prop-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .value-prop-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+        }
+        
+        .value-prop-subtitle {
+            font-size: 1.3rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+        }
+        
+        .value-prop-description {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+        
+        /* Experience Section */
+        .experience-section {
+            background: #ffffff;
+        }
+        
+        .experience-item {
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .experience-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .experience-item:nth-child(2) {
+            background: #f0f9ff;
+            border-left: 4px solid #0ea5e9;
+        }
+        
+        .experience-item:nth-child(3) {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+        }
+        
+        .experience-item:nth-child(4) {
+            background: #fef3f2;
+            border-left: 4px solid #ef4444;
+        }
+        
+        .experience-item:nth-child(5) {
+            background: #faf5ff;
+            border-left: 4px solid #a855f7;
+        }
+        
+        .experience-item:nth-child(6) {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .experience-item:nth-child(7) {
+            background: #f0fdfa;
+            border-left: 4px solid #06b6d4;
+        }
+        
+        .experience-item:nth-child(8) {
+            background: #fdf2f8;
+            border-left: 4px solid #ec4899;
+        }
+        
+        .role-header {
+            margin-bottom: 1.5rem;
+        }
+        
+        .role-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .company-info {
+            color: #3182ce;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .role-summary {
+            color: #2d3748;
+            font-weight: 500;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 3px solid currentColor;
+        }
+        
+        .achievements {
+            list-style: none;
+            margin: 1.5rem 0 0 0;
+        }
+        
+        .achievements li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        .achievements li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #3182ce;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-left: 4px solid #3182ce;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-content {
+            padding: 2rem;
+        }
+        
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-company {
+            color: #3182ce;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .project-description {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .project-metrics {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-metric {
+            background: #f7fafc;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .project-tag {
+            background: #3182ce;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        /* Skills Section */
+        .skills-section {
+            background: #f1f5f9;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .skill-category {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #3182ce;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skill-category h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .skill-tag {
+            background: #e6fffa;
+            color: #2d3748;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        /* Contact Form */
+        .contact-section {
+            background: #ffffff;
+        }
+        
+        .contact-form {
+            background: #f8fafc;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #3182ce;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-submit {
+            background: #3182ce;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            width: 100%;
+            font-size: 1rem;
+        }
+        
+        .form-submit:hover {
+            background: #2c5282;
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-item a {
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .contact-item a:hover {
+            color: #fff;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .hero {
+                margin-top: -70px;
+                padding-top: 100px;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                gap: 0;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links a {
+                padding: 1rem 0;
+                border-bottom: 1px solid #e2e8f0;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .profile-photo,
+            .photo-placeholder {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .contact-details {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Vincent Vernooij</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Vincent Vernooij</h1>
+                    <p class="tagline">Product Leader | Marketplaces & Platforms</p>
+                    
+                    <ul class="value-props">
+                        <li><strong>Value-oriented approach:</strong> Deep discovery and problem exploration before building solutions that truly matter</li>
+                        <li><strong>Global perspective:</strong> 10 years in London + 6 years at Expedia + US market exposure + 6 languages</li>
+                        <li><strong>Growth expertise:</strong> 3x MAUs, 4x downloads, €4B GMV managed across global markets</li>
+                        <li><strong>AI-forward mindset:</strong> Driving AI adoption through hackathons and strategic initiatives</li>
+                        <li><strong>Scale experience:</strong> Led teams of 7 PMs across 5+ major platforms with empathetic leadership</li>
+                        <li><strong>Empathetic coaching:</strong> Building PM curiosity and agency to create high-performing, self-directed teams</li>
+                    </ul>
+                    
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#experience" class="btn btn-secondary">View Experience</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <!-- Replace this div with <img src="vincent-photo.jpg" alt="Vincent Vernooij" class="profile-photo"> when you have your photo -->
+                    <div class="photo-placeholder">📸</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-prop-section section" id="about">
+        <div class="container">
+            <div class="value-prop-content">
+                <h2 class="value-prop-title">Product Leader | High-Volume E-commerce & Travel Platforms</h2>
+                <p class="value-prop-subtitle">15+ years scaling multi-million user platforms across 6 languages and diverse jurisdictions, with deep expertise in online travel and performance marketing</p>
+                <p class="value-prop-description">
+                    I specialize in high-volume e-commerce businesses, particularly online travel where I've spent a decade navigating multiple markets, currencies, and regulatory frameworks. 
+                    My focus is twofold: leading large, complex initiatives that require careful orchestration, and bringing strategic order to organizations ready to unlock their potential but unsure how to get there. 
+                    Having built teams and strategies from scratch across London's tech ecosystem and six countries, I'm comfortable with the messiness of real growth—coaching through both successes and the failures that teach us the most. 
+                    I drive impact through large-scale marketing (SEO, paid acquisition, affiliate networks) while staying grounded in measurable results. 
+                    Currently deepening my understanding of AI's role in transforming product strategy, because the intersection of complex problems and emerging technology is where the most interesting solutions emerge.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Leadership Experience</h2>
+            
+            <div class="experience-item">
+                <div class="role-header">
+                    <h3 class="role-title">Chief Product Officer</h3>
+                    <p class="company-info">Milanuncios (Adevinta) | Spain | Dec 2023 - Present</p>
+                    <p class="role-summary">Leading product strategy for Spain's #2 classifieds marketplace, empowering 7 PMs through strategic problem workshopping and fostering curiosity-driven discovery across buyer, seller, and trust verticals.</p>
+                </div>
+                <ul class="achievements">
+                    <li>Managing 7 Product Managers across buyer, seller (private & pro), and trust/transactions verticals</li>
+                    <li>Driving monetization initiatives, traffic growth, app migration, and fraud reduction</li>
+                    <li>Implementing AI-driven features through collaborative exploration and user validation</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="role-header">
+                    <h3 class="role-title">Product Director - Core Spain Marketplaces</h3>
+                    <p class="company-info">Adevinta | Spain | Jan 2022 - Dec 2023</p>
+                    <p class="role-summary">Delivered 12% YoY performance growth in year 1 and 5% in year 2 through strategic problem solving and team empowerment, unifying experiences across 5 major platforms while fostering cross-platform thinking.</p>
+                </div>
+                <ul class="achievements">
+                    <li>Managed 4 PMs and collaborated with engineering, business, and marketing teams across platforms</li>
+                    <li>Delivered +12% lead growth in year 1 and +5% in year 2 by scaling shared services</li>
+                    <li>Owned shared capabilities including advertising, login & identity, alerts, and privacy</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="role-header">
+                    <h3 class="role-title">Product Director - eDreams Apps</h3>
+                    <p class="company-info">eDreams ODIGEO | Spain | Oct 2018 - Nov 2021</p>
+                    <p class="role-summary">Scaled app product team from 2 to 5 squads while transforming 4 travel apps into a super app, delivering 3x MAU growth and growing booking share from 6% to 15% over three years.</p>
+                </div>
+                <ul class="achievements">
+                    <li>Tripled MAUs, quadrupled downloads, and doubled profitability through strategic app consolidation</li>
+                    <li>Managed 5 Product Managers across mobile, personalization, and ancillary services</li>
+                    <li>Advised C-level weekly on strategic initiatives, bringing global market perspective</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="role-header">
+                    <h3 class="role-title">Product Owner - Native Apps</h3>
+                    <p class="company-info">eDreams ODIGEO | Spain | Sep 2017 - Sep 2018</p>
+                    <p class="role-summary">Delivered strategic app initiatives during leadership transition, working closely with C-level stakeholders while managing checkout optimization and post-booking experience across mobile platforms.</p>
+                </div>
+                <ul class="achievements">
+                    <li>Managed 2 squads focused on checkout, payments, and post-booking experience optimization</li>
+                    <li>Delivered 20% uplift in booking conversion and launched mobile check-in across 200+ airlines</li>
+                    <li>Collaborated closely with web, CRM, marketing, pricing, and ASO teams for integrated strategy</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="role-header">
+                    <h3 class="role-title">Senior Product Manager - API Products</h3>
+                    <p class="company-info">Expedia Group | UK | Aug 2016 - Aug 2017</p>
+                    <p class="role-summary">Owned cloud API ecosystem serving 1,000+ partners with €4B GMV at Expedia's London headquarters, gaining invaluable US market exposure while coaching global teams across 34 locales.</p>
+                </div>
+                <ul class="achievements">
+                    <li>Managed 2 US-based PMs and 4 global development teams across multiple time zones</li>
+                    <li>Led strategic partner integrations including GDS, bed banks, and vacation rentals</li>
+                    <li>Delivered cloud-based API powering hotel content within Expedia's $4B+ Affiliate Network</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="role-header">
+                    <h3 class="role-title">Manager Product Management</h3>
+                    <p class="company-info">Expedia Group (Venere.com / Hotels.com) | Italy | Jan 2013 - Aug 2015</p>
+                    <p class="role-summary">Successfully executed complex platform migration from Venere to Hotels.com during peak years in London, applying strategic problem solving and team empowerment to navigate high-stakes technical transformation.</p>
+                </div>
+                <ul class="achievements">
+                    <li>Led product strategy for shopping funnel across two major travel brands</li>
+                    <li>Managed 3 Product Managers during high-stakes platform migration project</li>
+                    <li>Delivered end-to-end integration with zero revenue impact through empowered team approach</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="role-header">
+                    <h3 class="role-title">Product & Program Manager</h3>
+                    <p class="company-info">HomeAway (Expedia Group) | UK | Oct 2008 - Jan 2013</p>
+                    <p class="role-summary">Pioneered transformation from classified advertising to full e-commerce model across EMEA during formative London years, developing strategic problem exploration skills and curiosity-driven approach to complex business model challenges.</p>
+                </div>
+                <ul class="achievements">
+                    <li>Led business model transformation from classifieds to e-commerce across multiple markets</li>
+                    <li>Delivered new payment flows, user areas, and tiered subscription models</li>
+                    <li>Orchestrated complex platform migrations in France and Brazil with empowered local teams</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section" style="background: #ffffff; padding: 3rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 2rem;">Education & Certifications</h2>
+            <div style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: #f8fafc; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #3182ce;">
+                    <h3 style="font-size: 1.2rem; font-weight: 700; color: #2d3748; margin-bottom: 0.5rem;">Columbia University</h3>
+                    <p style="color: #4a5568; margin-bottom: 0.5rem;">Intellectual Property Law</p>
+                    <p style="color: #718096; font-size: 0.9rem;">New York, USA</p>
+                </div>
+                <div style="background: #f8fafc; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #22c55e;">
+                    <h3 style="font-size: 1.2rem; font-weight: 700; color: #2d3748; margin-bottom: 0.5rem;">University of Amsterdam</h3>
+                    <p style="color: #4a5568; margin-bottom: 0.5rem;">Bachelors & LLM, Law</p>
+                    <p style="color: #718096; font-size: 0.9rem;">Specialized in IT Law & International IP Rights</p>
+                </div>
+                <div style="background: #f8fafc; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                    <h3 style="font-size: 1.2rem; font-weight: 700; color: #2d3748; margin-bottom: 0.5rem;">PMP Certified</h3>
+                    <p style="color: #4a5568; margin-bottom: 0.5rem;">Project Management Institute</p>
+                    <p style="color: #718096; font-size: 0.9rem;">Strategic Program & Portfolio Management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section" style="background: #f7fafc;">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Travel Super App Transformation</h3>
+                        <p class="project-company">eDreams ODIGEO | Growth Focus</p>
+                        <p class="project-description">
+                            Led strategic evolution of 4 native travel apps into unified super app experience. 
+                            Drove comprehensive user journey redesign, feature consolidation, and cross-brand integration.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="project-metric">3x MAU Growth</span>
+                            <span class="project-metric">4x Downloads</span>
+                            <span class="project-metric">2x Profitability</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag">Mobile Strategy</span>
+                            <span class="project-tag">User Growth</span>
+                            <span class="project-tag">Revenue Growth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Hotel Affiliate Platform Development</h3>
+                        <p class="project-company">Expedia Group (Hotels.com) | Complex Initiative</p>
+                        <p class="project-description">
+                            Built comprehensive affiliate platform from scratch to enable hotel content distribution to third-party partners. 
+                            Designed API architecture, partner onboarding flows, and revenue-sharing models for global scalability.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="project-metric">New Platform</span>
+                            <span class="project-metric">API Architecture</span>
+                            <span class="project-metric">Partner Ecosystem</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag">Platform Development</span>
+                            <span class="project-tag">API Design</span>
+                            <span class="project-tag">Partner Strategy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Cross-Platform Migration Leadership</h3>
+                        <p class="project-company">HomeAway (Expedia) & Adevinta | Complex Initiative</p>
+                        <p class="project-description">
+                            Led multiple complex platform migrations: orchestrated France/Brazil market transitions at HomeAway (classified to e-commerce), 
+                            and architected strategic migration plan for Milanuncios to Leboncoin stack at Adevinta. Specialized in zero-downtime transitions and localization challenges.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="project-metric">Multi-Company</span>
+                            <span class="project-metric">Zero Downtime</span>
+                            <span class="project-metric">Strategic Planning</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag">Platform Migration</span>
+                            <span class="project-tag">Strategic Architecture</span>
+                            <span class="project-tag">Cross-Market</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Marketplace Business Model Transformation</h3>
+                        <p class="project-company">HomeAway (Expedia Group) | Growth Focus</p>
+                        <p class="project-description">
+                            Led transformation from classified advertising to full e-commerce model across EMEA. 
+                            Implemented payment processing, subscription tiers, and booking flows from scratch.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="project-metric">New Revenue Model</span>
+                            <span class="project-metric">EMEA Coverage</span>
+                            <span class="project-metric">Payment Integration</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag">Business Model</span>
+                            <span class="project-tag">E-commerce</span>
+                            <span class="project-tag">Revenue Growth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Product Strategy</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Marketplace Strategy</span>
+                        <span class="skill-tag">Platform Design</span>
+                        <span class="skill-tag">Product Roadmaps</span>
+                        <span class="skill-tag">MVP Development</span>
+                        <span class="skill-tag">Product-Led Growth</span>
+                        <span class="skill-tag">Discovery & Validation</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Growth & Monetization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Revenue Growth</span>
+                        <span class="skill-tag">User Acquisition</span>
+                        <span class="skill-tag">Conversion Optimization</span>
+                        <span class="skill-tag">Pricing Strategy</span>
+                        <span class="skill-tag">A/B Testing</span>
+                        <span class="skill-tag">Performance Marketing</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Leadership & Coaching</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">Empathetic Management</span>
+                        <span class="skill-tag">PM Coaching</span>
+                        <span class="skill-tag">Curiosity Development</span>
+                        <span class="skill-tag">Agency Building</span>
+                        <span class="skill-tag">Strategic Planning</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>AI & Innovation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AI Strategy</span>
+                        <span class="skill-tag">Innovation Hackathons</span>
+                        <span class="skill-tag">Emerging Technologies</span>
+                        <span class="skill-tag">Problem Workshopping</span>
+                        <span class="skill-tag">Strategic Discovery</span>
+                        <span class="skill-tag">Global Markets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inquiry-type">Type of Inquiry</label>
+                        <select id="inquiry-type" name="inquiry-type">
+                            <option value="">Select...</option>
+                            <option value="full-time">Full-time Role</option>
+                            <option value="consulting">Consulting Project</option>
+                            <option value="advisory">Advisory Position</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell me about the opportunity or project..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info section">
+        <div class="container">
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:vvernooij@gmail.com">vvernooij@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <a href="tel:+34644607246">+34 644 607 246</a>
+                </div>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <a href="https://www.linkedin.com/in/vincent-v-9021577" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Barcelona, Spain | Dutch National | Remote | International</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const company = formData.get('company');
+            const inquiryType = formData.get('inquiry-type');
+            const message = formData.get('message');
+            
+            // Create mailto link
+            const subject = encodeURIComponent(`${inquiryType ? inquiryType.charAt(0).toUpperCase() + inquiryType.slice(1) + ' - ' : ''}Contact from ${name}${company ? ' (' + company + ')' : ''}`);
+            const body = encodeURIComponent(`Name: ${name}
+Email: ${email}
+${company ? 'Company: ' + company : ''}
+${inquiryType ? 'Type of Inquiry: ' + inquiryType : ''}
+
+Message:
+${message}`);
+            
+            const mailtoLink = `mailto:vvernooij@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Opening your email client... If it doesn\'t open automatically, please send an email to vvernooij@gmail.com');
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
